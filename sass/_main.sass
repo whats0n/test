@@ -1,0 +1,115 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding: 10px 20px 
+	background: rgb(28, 41, 50)
+	z-index: 1000
+	a
+		color: #fff0dc
+		&:hover
+			color: #f9c4bf 
+.logo
+	position: relative
+	float: left
+	width: 30px
+	height: 30px
+	&:before, &:after
+		position: absolute
+		content: "" 
+	&:before
+		top: 0
+		left: 0
+		+arr(30, 30, #fff0dc, b)
+	&:after
+		left: 5px
+		top: 0
+		+arr(20, 20, rgb(28, 41, 50), b)
+	
+.nav
+	float: right
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 6px 
+
+.main
+	padding: 50px 0 0
+		
+.inner
+	max-width: 980px
+	margin: 0 auto
+	padding: 100px 20px  
+	text-align: center
+	h3, p
+		padding: 10px 0 
+	
+.title
+	padding: 15px
+	border-bottom: 3px solid #000
+	display: inline-block
+	margin-bottom: 30px  
+
+.about
+	background: #fff 
+
+.portfolio
+	background: #d2d4d6 
+	
+.contacts
+	background: #fdb352 
+	
+.slider
+	font-size: 0
+	padding: 20px 0 0 
+
+.slide
+	display: inline-block
+	vertical-align: top
+	padding: 0 10px 
+	overflow: hidden
+	&:hover
+		.slide__info
+			top: 0
+	a
+		position: relative
+		display: block
+		color: #fff 
+	&__info
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		height: 100%
+		background: rgba(13, 136, 229, 0.8) 
+		+vertical
+		padding: 20px 
+		+transition(top 0.3s ease-in)
+	p
+		font-size: 14px
+		display: inline-block
+		vertical-align: middle
+		
+.form
+	font-size: 0
+	
+.footer
+	background: #333
+	padding: 30px  
+	.inner
+		padding: 0
+
+.social
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 15px 
+		a
+			display: inline-block
+			color: #fff
+			font-size: 14px 
+			position: relative
+			&:hover
+				text-decoration: underline
